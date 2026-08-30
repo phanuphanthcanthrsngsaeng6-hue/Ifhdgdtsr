@@ -1,10 +1,10 @@
 <a href="https://chatbot.ai-sdk.dev/demo">
-  <img alt="Chatbot" src="app/(chat)/opengraph-image.png">
-  <h1 align="center">Chatbot</h1>
+  <img alt="AI Builder" src="app/(chat)/opengraph-image.png">
+  <h1 align="center">AI Builder</h1>
 </a>
 
 <p align="center">
-    Chatbot (formerly AI Chatbot) is a free, open-source template built with Next.js and the AI SDK that helps you quickly build powerful chatbot applications.
+    AI Builder is a focused workspace for turning ideas into polished, editable web experiences with AI-assisted generation, live preview, and production-ready code.
 </p>
 
 <p align="center">
@@ -15,6 +15,12 @@
   <a href="#running-locally"><strong>Running locally</strong></a>
 </p>
 <br/>
+
+## AI Builder workspace
+
+The main workspace turns the starter chatbot shell into an AI Builder canvas. Describe a change in natural language, switch between a live preview and generated code, compare desktop/tablet/mobile breakpoints, choose a starter template, and tune the site title, primary color, typeface, and corner style from the inspector.
+
+The current builder ships with three ready-to-edit starting points: Launchpad for SaaS pages, Atelier for creative portfolios, and Goodfolk for boutique storefronts. The prompt composer provides a lightweight generation loop with visible build status, change count, code copy, and `.tsx` download actions. It is intentionally dependency-free and uses the existing Next.js, Tailwind CSS, and Lucide setup.
 
 ## Features
 
@@ -54,7 +60,7 @@ You can deploy your own version of Chatbot to Vercel with one click:
 
 ## Running locally
 
-You will need to use the environment variables [defined in `.env.example`](.env.example) to run Chatbot. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
+You will need to use the environment variables [defined in `.env.example`](.env.example) to run AI Builder. It's recommended you use [Vercel Environment Variables](https://vercel.com/docs/projects/environment-variables) for this, but a `.env` file is all that is necessary.
 
 > Note: You should not commit your `.env` file or it will expose secrets that will allow others to control access to your various AI and authentication provider accounts.
 

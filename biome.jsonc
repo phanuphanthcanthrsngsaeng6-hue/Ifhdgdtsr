@@ -19,6 +19,18 @@
       "!hooks/use-mobile.ts"
     ]
   },
+  "overrides": [
+    {
+      "includes": ["app/(chat)/page.tsx"],
+      "linter": {
+        "rules": {
+          "performance": {
+            "noJsxPropsBind": "off"
+          }
+        }
+      }
+    }
+  ],
   "linter": {
     "rules": {
       "suspicious": {
