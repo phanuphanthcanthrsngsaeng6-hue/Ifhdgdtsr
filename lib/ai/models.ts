@@ -2,6 +2,7 @@ export const DEFAULT_CHAT_MODEL = "openai/gpt-4o-mini";
 
 export const titleModel = {
   description: "Fast model for title generation",
+  gatewayOrder: [],
   id: "openai/gpt-4o-mini",
   name: "GPT-4o mini",
   provider: "openai",
