@@ -11,7 +11,9 @@ const runMigrate = async () => {
   const databaseUrl = process.env.POSTGRES_URL ?? process.env.DATABASE_URL;
 
   if (!databaseUrl) {
-    console.log("POSTGRES_URL or DATABASE_URL not defined, skipping migrations");
+    console.log(
+      "POSTGRES_URL or DATABASE_URL not defined, skipping migrations"
+    );
     process.exit(0);
   }
 
