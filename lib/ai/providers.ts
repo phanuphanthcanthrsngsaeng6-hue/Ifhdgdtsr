@@ -1,9 +1,8 @@
 import { createOpenAI } from "@ai-sdk/openai";
-import { customProvider } from "ai";
+import { customProvider, gateway } from "ai";
 import { isTestEnvironment } from "../constants";
 
 const openai = createOpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const directModel = "gpt-4o-mini";
 
 export const myProvider = isTestEnvironment
   ? (() => {
@@ -25,12 +24,12 @@ export function getLanguageModel(modelId: string) {
     return myProvider.languageModel(modelId);
   }
 
-  return openai(directModel);
+  return gateway(modelId);
 }
 
 export function getTitleModel() {
   if (isTestEnvironment && myProvider) {
     return myProvider.languageModel("title-model");
   }
-  return openai(directModel);
+  return openai("gpt-4o-mini");
 }

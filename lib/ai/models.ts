@@ -30,6 +30,36 @@ export const chatModels: ChatModel[] = [
     name: "GPT-4o mini",
     provider: "openai",
   },
+  {
+    description: "โมเดล DeepSeek สำหรับการแชตทั่วไปและการเขียนโค้ด",
+    id: "deepseek/deepseek-chat",
+    name: "DeepSeek Chat",
+    provider: "deepseek",
+  },
+  {
+    description: "โมเดล Gemini ที่ตอบเร็ว เหมาะกับงานทั่วไป",
+    id: "google/gemini-2.5-flash",
+    name: "Gemini 2.5 Flash",
+    provider: "google",
+  },
+  {
+    description: "โมเดล GPT-OSS สำหรับการให้เหตุผลและการเขียนโค้ด",
+    id: "openai/gpt-oss-120b",
+    name: "GPT-OSS 120B",
+    provider: "openai",
+  },
+  {
+    description: "โมเดล Qwen สำหรับภาษาไทยและงานหลายภาษา",
+    id: "qwen/qwen3-235b-a22b",
+    name: "Qwen3 235B",
+    provider: "qwen",
+  },
+  {
+    description: "โมเดล Llama ขนาดใหญ่สำหรับแชตและการใช้เครื่องมือ",
+    id: "meta-llama/llama-3.3-70b-instruct",
+    name: "Llama 3.3 70B",
+    provider: "meta-llama",
+  },
 ];
 
 export async function getCapabilities(): Promise<
